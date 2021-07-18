@@ -16,9 +16,15 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/commerce": "^2.25",
+        "drupal/commerce_wishlist": "3.x-dev@dev",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/quicktabs": "3.x-dev@dev",
+        "drupal/sshop": "^1.12",
         "drush/drush": "^10.5"
     },
     "conflict": {

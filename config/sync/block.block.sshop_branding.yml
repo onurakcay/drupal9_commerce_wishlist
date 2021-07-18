@@ -1,0 +1,25 @@
+uuid: fb1738dd-11e5-4e43-a5cd-eff25a30d0ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sshop
+_core:
+  default_config_hash: 3XUwk0qCWTFvPvFCwgES5Ktw_5TGA6ENnlk7qLlQXCE
+id: sshop_branding
+theme: sshop
+region: navigation
+weight: -9
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

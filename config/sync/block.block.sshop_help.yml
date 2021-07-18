@@ -1,0 +1,22 @@
+uuid: 73124ac3-7e7f-4638-bb54-532baed4a822
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sshop
+_core:
+  default_config_hash: X-HrfKo1vK-x0plH47eOHrAZYHhn6bdjM9bNE49v3z8
+id: sshop_help
+theme: sshop
+region: help
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

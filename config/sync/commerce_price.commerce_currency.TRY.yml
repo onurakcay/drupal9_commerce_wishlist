@@ -1,0 +1,9 @@
+uuid: 45e33eb6-efc7-4147-bc1c-9080aea4acfb
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: TRY
+name: 'Turkish Lira'
+numericCode: '949'
+symbol: TRY
+fractionDigits: 2

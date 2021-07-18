@@ -1,0 +1,29 @@
+uuid: acbd48b8-b419-42e5-8c0f-00c3993a8324
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.single_store
+  module:
+    - system
+    - views
+  theme:
+    - sshop
+id: views_block__single_store_block_1
+theme: sshop
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:single_store-block_1'
+settings:
+  id: 'views_block:single_store-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/store/*'
+    negate: false

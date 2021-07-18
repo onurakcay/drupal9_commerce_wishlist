@@ -1,0 +1,22 @@
+uuid: f53a5291-355b-4fbd-ae20-072231f1094d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sshop
+_core:
+  default_config_hash: tiCtIeuUakCdmh-XUfIzpGwB4TeOqivxzVfzJ9zWS-E
+id: sshop_content
+theme: sshop
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

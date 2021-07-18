@@ -1,0 +1,12 @@
+uuid: f8de273c-2129-4a0c-9513-18171b959252
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 6i7K30yAYJSd3amDd3OQXZZ9Dz_PuShdRhtIUBLNPF8
+id: node.blog_homepage_teaser
+label: 'Blog homepage teaser'
+targetEntityType: node
+cache: true

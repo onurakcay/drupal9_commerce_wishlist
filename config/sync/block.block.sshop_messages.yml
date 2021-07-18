@@ -1,0 +1,22 @@
+uuid: 16315d48-eb74-4585-a833-c195384dc516
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sshop
+_core:
+  default_config_hash: fcTW94Uv2xKyeTAe4pkzgv7KtKOk8JR5nN1XD_yMR94
+id: sshop_messages
+theme: sshop
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: cc0dbe2d-c5aa-4f0f-a3d1-9201918cd711
+name: Wishlist
+mail: onurakcay.tr@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /homepage
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
