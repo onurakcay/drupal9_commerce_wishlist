@@ -1,20 +1,18 @@
-uuid: bb723d31-12d5-46c0-986d-79394fe6d408
+uuid: 0ee88ff7-6b80-4c24-a98d-5e8176ff3bf6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.commerce_product.field_images
-    - image.style.medium
+    - eck.eck_type.default.matbaa
   module:
-    - commerce_product
-    - image
-id: all_products
-label: 'All Products'
+    - eck
+id: listelerim
+label: Listelerim
 module: views
 description: ''
 tag: ''
-base_table: commerce_product_field_data
-base_field: product_id
+base_table: default_field_data
+base_field: id
 display:
   default:
     display_plugin: default
@@ -80,7 +78,7 @@ display:
       fields:
         title:
           id: title
-          table: commerce_product_field_data
+          table: default_field_data
           field: title
           relationship: none
           group_type: group
@@ -129,7 +127,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -143,10 +141,10 @@ display:
           entity_type: null
           entity_field: title
           plugin_id: field
-        field_images:
-          id: field_images
-          table: commerce_product__field_images
-          field: field_images
+        id:
+          id: id
+          table: default_field_data
+          field: id
           relationship: none
           group_type: group
           admin_label: ''
@@ -191,11 +189,12 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image_url
+          click_sort_column: value
+          type: number_integer
           settings:
-            image_style: medium
-          group_column: ''
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -205,60 +204,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: default
+          entity_field: id
           plugin_id: field
-        view_commerce_product:
-          id: view_commerce_product
-          table: commerce_product
-          field: view_commerce_product
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          text: view
-          output_url_as_text: true
-          absolute: false
-          entity_type: commerce_product
-          plugin_id: entity_link
         nothing:
           id: nothing
           table: views
@@ -270,7 +218,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<br><br><div class=\"mt-4\">\r\n<a href=\"{{ view_commerce_product }} \"><img src=\"{{ field_images }}\" width=\"200px\"/></a><br><br>\r\n<a href=\"{{ view_commerce_product }}\">{{ title }} </a>\r\n</div>"
+            text: '<h3>{{ title }}</h3>'
             make_link: false
             path: ''
             absolute: false
@@ -309,35 +257,117 @@ display:
           hide_alter_empty: false
           plugin_id: custom
       filters:
-        status:
-          value: '1'
-          table: commerce_product_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: commerce_product
-          entity_field: status
-          id: status
+        type:
+          id: type
+          table: default_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            matbaa: matbaa
+          group: 1
+          exposed: false
           expose:
-            operator: ''
+            operator_id: type_op
+            label: Type
+            description: null
+            use_operator: false
+            operator: type_op
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
+            identifier: type
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: default
+          entity_field: type
+          plugin_id: bundle
       sorts: {  }
-      title: Ürünler
+      title: Listelerim
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
-      arguments: {  }
+      arguments:
+        uid:
+          id: uid
+          table: default_field_data
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: current_user
+          default_argument_options: {  }
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            items_per_page: 25
+            override: false
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+          entity_type: default
+          entity_field: uid
+          plugin_id: numeric
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
-      tags:
-        - 'config:field.storage.commerce_product.field_images'
+        - user
+      tags: {  }
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+      tags: {  }
   page_1:
     display_plugin: page
     id: page_1
@@ -345,21 +375,13 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: homepage
-      menu:
-        type: none
-        title: Anasayfa
-        description: ''
-        expanded: false
-        parent: ''
-        weight: 0
-        context: '0'
-        menu_name: main
+      path: listelerim
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
         - url.query_args
-      tags:
-        - 'config:field.storage.commerce_product.field_images'
+        - user
+      tags: {  }

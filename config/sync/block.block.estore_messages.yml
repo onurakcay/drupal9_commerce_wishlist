@@ -1,0 +1,22 @@
+uuid: 9d4aebc9-df03-49b5-b2d7-d8b9fb596d51
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - estore
+_core:
+  default_config_hash: j5x3tv63rbT-NwE8ArW2PnQd5R3ZzgLZHxxi86fM_RM
+id: estore_messages
+theme: estore
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,7 @@
+role_to_select:
+  alici: alici
+  administrator: '0'
+  satici: '0'
+registration_mode: admin
+_core:
+  default_config_hash: o1wWkhSOJotsHFgvzESaUOiTWhLak62cKBDyEtewAIM

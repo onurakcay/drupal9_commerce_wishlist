@@ -1,0 +1,10 @@
+uuid: f1aca516-dd63-48d1-ab0b-71a31e92b380
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: ListEntityType
+created: true
+changed: true
+uid: true
+title: true

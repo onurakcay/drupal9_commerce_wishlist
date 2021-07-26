@@ -1,0 +1,14 @@
+uuid: e6c924dd-c91a-48f8-ad3e-6ff19e74ff11
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.alici
+  module:
+    - user
+id: user_remove_role_action.alici
+label: 'Remove the Alıcı role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: alici

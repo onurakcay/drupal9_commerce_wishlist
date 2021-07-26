@@ -22,7 +22,10 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_kint_extras: 0
   dynamic_page_cache: 0
+  eck: 0
   editor: 0
   entity: 0
   entity_reference_revisions: 0
@@ -45,6 +48,7 @@ module:
   profile: 0
   quickedit: 0
   rdf: 0
+  registration_role: 0
   search: 0
   shortcut: 0
   state_machine: 0
@@ -56,6 +60,7 @@ module:
   tour: 0
   user: 0
   views_ui: 0
+  wl_adjust_role: 0
   views: 10
   standard: 1000
 theme:
@@ -65,6 +70,7 @@ theme:
   bartik: 0
   bootstrap: 0
   sshop: 0
+  estore: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

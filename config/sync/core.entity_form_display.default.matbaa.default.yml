@@ -1,0 +1,22 @@
+uuid: 683590a2-9076-4675-bdf9-35386c6e64dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.default.matbaa
+id: default.matbaa.default
+targetEntityType: default
+bundle: matbaa
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

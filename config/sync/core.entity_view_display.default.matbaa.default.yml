@@ -1,0 +1,23 @@
+uuid: 30bee054-5cde-4411-8db7-f33b2c7eae7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.default.matbaa
+id: default.matbaa.default
+targetEntityType: default
+bundle: matbaa
+mode: default
+content:
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  uid: true

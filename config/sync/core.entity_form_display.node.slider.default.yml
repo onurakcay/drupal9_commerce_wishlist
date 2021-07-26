@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.slider.body
     - field.field.node.slider.field_image
     - field.field.node.slider.field_link
+    - field.field.node.slider.field_teaser_text
     - image.style.thumbnail
     - node.type.slider
   module:
@@ -95,4 +96,5 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_teaser_text: true

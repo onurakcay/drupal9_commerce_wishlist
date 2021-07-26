@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for wl_adjust_role module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+
+function wl_adjust_role_commerce_store_insert(Drupal\Core\Entity\EntityInterface $entity)
+{
+    $storeUser = $entity->getOwner();
+    $storeUser->removeRole("alici");
+    $storeUser->addRole("satici");
+    $storeUser->save();
+}

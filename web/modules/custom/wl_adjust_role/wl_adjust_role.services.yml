@@ -1,0 +1,6 @@
+services:
+  wl_adjust_role.event_subscriber:
+    class: Drupal\wl_adjust_role\EventSubscriber\WlAdjustRoleSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }

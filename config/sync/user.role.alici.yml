@@ -1,0 +1,10 @@
+uuid: f8daa0c4-7777-486e-9dbf-38d3ab3602b8
+langcode: en
+status: true
+dependencies: {  }
+id: alici
+label: Alıcı
+weight: 4
+is_admin: null
+permissions:
+  - 'create online commerce_store'

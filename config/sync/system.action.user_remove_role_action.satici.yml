@@ -1,0 +1,14 @@
+uuid: b7f4f284-e877-41d3-8dba-0dd0428db296
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.satici
+  module:
+    - user
+id: user_remove_role_action.satici
+label: 'Remove the Satıcı role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: satici

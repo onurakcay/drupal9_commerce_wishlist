@@ -1,0 +1,4 @@
+administer wl_adjust_role configuration:
+  title: 'Administer wl_adjust_role configuration'
+  description: 'Optional description.'
+  restrict access: true

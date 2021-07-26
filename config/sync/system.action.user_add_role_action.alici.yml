@@ -1,0 +1,14 @@
+uuid: 5cb1f26e-c479-412d-b297-768740afc0a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.alici
+  module:
+    - user
+id: user_add_role_action.alici
+label: 'Add the Alıcı role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: alici

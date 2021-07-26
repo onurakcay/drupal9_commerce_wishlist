@@ -1,0 +1,20 @@
+uuid: 5edd91fb-b45e-4b4f-93da-dd02ab794075
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - eck
+id: default.field_urun
+field_name: field_urun
+entity_type: default
+type: entity_reference
+settings:
+  target_type: commerce_product
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

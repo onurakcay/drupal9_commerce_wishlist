@@ -1,0 +1,40 @@
+uuid: 3f80fa40-e013-484d-8b05-9b9802b2c5a8
+langcode: en
+status: true
+dependencies: {  }
+id: satici
+label: Satıcı
+weight: 3
+is_admin: null
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access commerce_order overview'
+  - 'access commerce_product overview'
+  - 'access commerce_product_attribute overview'
+  - 'access default entity listing'
+  - 'create commerce_product_attribute'
+  - 'create default commerce_order'
+  - 'create default commerce_product'
+  - 'create default entities'
+  - 'delete commerce_product_attribute'
+  - 'delete own default commerce_product'
+  - 'delete own default entities'
+  - 'delete own online commerce_store'
+  - 'duplicate own online commerce_store'
+  - 'edit own comments'
+  - 'edit own default entities'
+  - 'manage default commerce_order_item'
+  - 'manage default commerce_product_variation'
+  - 'post comments'
+  - 'update commerce_product_attribute'
+  - 'update own default commerce_product'
+  - 'update own online commerce_store'
+  - 'view commerce_product'
+  - 'view commerce_product_attribute'
+  - 'view default commerce_order'
+  - 'view default commerce_product'
+  - 'view online commerce_store'
+  - 'view own commerce_order'
+  - 'view own default entities'
+  - 'view own unpublished commerce_product'

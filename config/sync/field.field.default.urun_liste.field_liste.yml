@@ -1,0 +1,29 @@
+uuid: 0102e5aa-f88a-42a8-8b78-4333acd013ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.default.matbaa
+    - eck.eck_type.default.urun_liste
+    - field.storage.default.field_liste
+id: default.urun_liste.field_liste
+field_name: field_liste
+entity_type: default
+bundle: urun_liste
+label: Liste
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:default'
+  handler_settings:
+    target_bundles:
+      matbaa: matbaa
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

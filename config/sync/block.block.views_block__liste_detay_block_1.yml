@@ -1,0 +1,29 @@
+uuid: a5833565-2862-42f9-a59d-dfc56c375a49
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.liste_detay
+  module:
+    - system
+    - views
+  theme:
+    - estore
+id: views_block__liste_detay_block_1
+theme: estore
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:liste_detay-block_1'
+settings:
+  id: 'views_block:liste_detay-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/default/*'
+    negate: false

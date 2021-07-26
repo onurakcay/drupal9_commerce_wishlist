@@ -1,0 +1,9 @@
+uuid: e75f126c-9f00-4b42-bdcd-3141b4f7865a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.default
+type: urun_liste
+name: 'Ürün Liste'
+description: ''

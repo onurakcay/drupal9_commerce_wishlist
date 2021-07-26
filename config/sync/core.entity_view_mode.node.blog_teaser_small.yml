@@ -1,0 +1,12 @@
+uuid: e7aa793b-4bf5-4803-95ca-90dcf632a058
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: PR5gkJnLrv-4jBEwO5LxITprtMjnTJrdP5BHkOhkhNo
+id: node.blog_teaser_small
+label: 'Blog teaser small'
+targetEntityType: node
+cache: true

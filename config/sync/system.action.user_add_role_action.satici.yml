@@ -1,0 +1,14 @@
+uuid: 1b40ff3f-53e8-46f1-b0ac-c7d98de2e518
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.satici
+  module:
+    - user
+id: user_add_role_action.satici
+label: 'Add the Satıcı role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: satici

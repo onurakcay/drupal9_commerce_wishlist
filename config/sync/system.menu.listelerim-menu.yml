@@ -1,0 +1,8 @@
+uuid: e53249bb-e7ed-420b-bf0a-f8f1c196240b
+langcode: en
+status: true
+dependencies: {  }
+id: listelerim-menu
+label: 'Listelerim Menü'
+description: ''
+locked: false

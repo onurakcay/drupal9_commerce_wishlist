@@ -1,0 +1,20 @@
+uuid: 52995a5b-1bb6-4921-8457-43dcfa6975ff
+langcode: en
+status: true
+dependencies:
+  theme:
+    - estore
+_core:
+  default_config_hash: fMVUpsA6aRcR910kdtDQB4iu65kLY2b-2LjjRQaPVzg
+id: estore_local_actions
+theme: estore
+region: content
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

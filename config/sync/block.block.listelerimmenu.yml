@@ -1,0 +1,29 @@
+uuid: d15ad985-b701-47e0-a0f8-c54632a2bb6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.listelerim-menu
+  module:
+    - system
+  theme:
+    - estore
+id: listelerimmenu
+theme: estore
+region: content
+weight: -6
+provider: null
+plugin: 'system_menu_block:listelerim-menu'
+settings:
+  id: 'system_menu_block:listelerim-menu'
+  label: 'Listelerim Menü'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /listelerim
+    negate: false

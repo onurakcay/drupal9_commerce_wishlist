@@ -1,0 +1,9 @@
+uuid: cc7f610e-c201-41ea-9d8c-11971694b53a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.default
+type: matbaa
+name: Listeler
+description: ''

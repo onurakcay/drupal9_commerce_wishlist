@@ -1,7 +1,9 @@
 uuid: 8356beec-54ee-465f-bfb1-90aff34fe260
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - wl_adjust_role
 _core:
   default_config_hash: 5BYvSDemm8xYwB9rMGFuEuGK6FxVheqtXEUxnpKO2N4
 id: default
@@ -9,7 +11,7 @@ label: Default
 plugin: multistep_default
 configuration:
   display_checkout_progress: true
-  display_checkout_progress_breadcrumb_links: false
+  display_checkout_progress_breadcrumb_links: true
   panes:
     login:
       allow_guest_checkout: true
@@ -25,14 +27,20 @@ configuration:
       weight: 2
     review:
       step: review
-      weight: 3
+      weight: 4
     completion_message:
       message:
         value: "Your order number is [commerce_order:order_number].\r\nYou can view your order on your account page when logged in."
         format: plain_text
       step: complete
-      weight: 4
+      weight: 5
     order_summary:
       view: null
       step: _sidebar
-      weight: 5
+      weight: 7
+    completion_register:
+      step: complete
+      weight: 6
+    my_checkout_pane_custom_message:
+      step: order_information
+      weight: 3

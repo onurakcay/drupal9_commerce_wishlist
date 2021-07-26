@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.slider.body
     - field.field.node.slider.field_image
     - field.field.node.slider.field_link
+    - field.field.node.slider.field_teaser_text
     - image.style.sc1982x714
     - node.type.slider
   module:
@@ -49,4 +50,5 @@ content:
       target: ''
     third_party_settings: {  }
 hidden:
+  field_teaser_text: true
   links: true
